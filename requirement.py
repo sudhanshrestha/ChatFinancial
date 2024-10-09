@@ -4,6 +4,7 @@ import sys
 
 # List of required libraries for the project
 required_libraries = [
+    'openpyxl',
     'pandas',        
     'numpy',         
     'scikit-learn',  
