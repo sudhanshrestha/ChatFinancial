@@ -5,6 +5,8 @@ import sys
 # List of required libraries for the project
 required_libraries = [
     'openpyxl',
+    'plotly',
+    'nbformat',
     'pandas',        
     'numpy',         
     'scikit-learn',  
