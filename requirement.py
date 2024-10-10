@@ -5,6 +5,7 @@ import sys
 # List of required libraries for the project
 required_libraries = [
     'openpyxl',
+    'numpy == 1.24.2',
     'plotly',
     'nbformat',
     'pandas',        
@@ -12,7 +13,13 @@ required_libraries = [
     'scikit-learn',  
     'matplotlib',     
     'seaborn',          
-    'joblib'         
+    'joblib',
+    'tensorflow ==2.10.0',
+    'torch',
+    'keras',
+    'transformers',
+    'accelerate>=0.26.0'   
+    'ipywidgets'      
 ]
 
 for library in required_libraries:
