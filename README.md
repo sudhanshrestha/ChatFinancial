@@ -1,4 +1,4 @@
-# Financial Prediction App with LLM Integration
+# Financial Prediction App with LLM Integration (Work-in Progress)
 
 ## Project Goals
 
