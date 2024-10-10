@@ -6,3 +6,6 @@ venv/
 # Ignore data folders
 data/
 models/
+
+# ignore file
+apikey.env

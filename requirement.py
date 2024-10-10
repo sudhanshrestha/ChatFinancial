@@ -4,7 +4,9 @@ import sys
 
 # List of required libraries for the project
 required_libraries = [
+    'python-dotenv',
     'openpyxl',
+    'protobuf==3.19.4',
     'numpy == 1.24.2',
     'plotly',
     'nbformat',
@@ -19,7 +21,8 @@ required_libraries = [
     'keras',
     'transformers',
     'accelerate>=0.26.0'   
-    'ipywidgets'      
+    'ipywidgets',
+    'google-generativeai'     
 ]
 
 for library in required_libraries:
