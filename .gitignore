@@ -5,3 +5,4 @@ venv/
 
 # Ignore data folders
 data/
+models/
