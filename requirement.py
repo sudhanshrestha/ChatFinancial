@@ -16,11 +16,11 @@ required_libraries = [
     'matplotlib',     
     'seaborn',          
     'joblib',
-    'tensorflow ==2.10.0',
-    'torch',
-    'keras',
-    'transformers',
-    'accelerate>=0.26.0'   
+    # 'tensorflow ==2.10.0',
+    # 'torch',
+    # 'keras',
+    # 'transformers',
+    # 'accelerate>=0.26.0'   
     'ipywidgets',
     'google-generativeai'     
 ]
