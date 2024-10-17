@@ -8,7 +8,7 @@ The primary goal of this project is to develop a financial prediction applicatio
 
 - Since prediction on small dataset is not viable right now , will try to shif this project into more of a summary of personal finances.
 - Integrating LLMs to act as a financial advisor that will answer your financial question ?
-   - LLMs being tested: 
-      - Different Hugging face models
-      - Gemeni (API not handy for others to use)
+   - LLMs being tested on currently: 
+      ~~- Different Hugging face models ( DONE)~~
+      ~~- Gemeni (DONE)~~
       - Llama (Tested in device)
