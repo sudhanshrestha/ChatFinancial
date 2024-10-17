@@ -10,5 +10,5 @@ The primary goal of this project is to develop a financial prediction applicatio
 - Integrating LLMs to act as a financial advisor that will answer your financial question ?
    - LLMs being tested: 
       - Different Hugging face models
-      - Gemeni ( Being tested)
-      - Llama (TO DO)
+      - Gemeni (API not handy for others to use)
+      - Llama (Tested in device)

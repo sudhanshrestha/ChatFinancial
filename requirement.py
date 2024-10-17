@@ -16,6 +16,7 @@ required_libraries = [
     'matplotlib',     
     'seaborn',          
     'joblib',
+    'ollama',
     # 'tensorflow ==2.10.0',
     # 'torch',
     # 'keras',
