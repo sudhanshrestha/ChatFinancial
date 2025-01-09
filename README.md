@@ -4,13 +4,13 @@
 
 The primary goal of this project is to develop a financial prediction application that utilizes machine learning models to predict spending and income amounts based on user input. Additionally, the application will integrate a language model to act as a financial advisor, providing insights and guidance on managing finances.
 
-## Current Progress (Dev branch)
-- Since prediction on small dataset is not viable right now , will try to shif this project into more of a summary of personal finances.
-- Integrating LLMs to act as a financial advisor that will answer your financial question ?
-   - LLMs being tested: 
-      - Different Hugging face models
-      - ~~Gemeni ( API use not viable)~~
-      - Llama (Testing)
+## Current Accomplishment (Dev branch)
+   - ollama 3.2 3B in device, so it might run on mostly any device. (DONE)
+   - RAG implementation to not let it derail from context (DONE)
+
+## Future tests 
+- CAG (Cache-Augmented Generation) implmentation just want to try it out to see what's different ? 
+
 
 ## Contribution
 
