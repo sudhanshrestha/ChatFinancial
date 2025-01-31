@@ -49,7 +49,7 @@ Double-click on the `run_ollama.bat` file to execute the command `ollama run dee
 
 ### 5. Run the app:
 **Note:** You will need to have `ollama` program running before doing this step, ensure its running on the background.
-After installing the dependencies, you can start the Streamlit app with:
+After installing the dependencies and ensuring ollama is running, you can start the Streamlit app with:
 ```bash
 streamlit run app.py  # or whatever your main file is named
 ```
