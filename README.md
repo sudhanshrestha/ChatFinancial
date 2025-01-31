@@ -20,8 +20,8 @@ Follow these steps to run the chatbot locally:
 
 ### 1. Clone the repository:
 ```bash
-git clone LINK
-cd <location>
+git clone https://github.com/sudhanshrestha/ChatFinancial.git
+cd ChatFinancial
 ```
 
 ### 2. Set up a virtual environment:
