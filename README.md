@@ -3,6 +3,11 @@
 
 This is a **Financial Advisor Chatbot** built with Streamlit, Ollama, and Langchain, designed to help users with financial-related questions, including budgeting, saving, and investing. The chatbot offers personalized, concise, and number-driven advice.
 
+<div style="display: flex; justify-content: space-around;">
+  <img src="res/s1.png" alt="Ollama Output 1" width="45%" />
+  <img src="res/s2.png" alt="Ollama Output 2" width="45%" />
+</div>
+
 ## Features:
 - **Financial Advice**: Ask the bot anything about budgeting, investing, savings, loans, mortgages, retirement, and more.
 - **Query Validation**: The bot ensures responses are financial-related and politely declines any off-topic questions.
@@ -20,8 +25,8 @@ Follow these steps to run the chatbot locally:
 
 ### 1. Clone the repository:
 ```bash
-git clone LINK
-cd <location>
+git clone https://github.com/sudhanshrestha/ChatFinancial.git
+cd ChatFinancial
 ```
 
 ### 2. Set up a virtual environment:
