@@ -4,7 +4,7 @@ import ollama
 import re
 import shelve
 
-current_model = "deepseek-r1:1.5b" # ollama model being used
+current_model = "deepseek-r1:8b" # ollama model being used
 
 # query validation from user to block unrelated responses.
 import re
@@ -44,9 +44,8 @@ Your response:
 prompt = ChatPromptTemplate.from_template(prompt_template)
 
 
-# function for chat responses
 def chat_with_bot(question):
-    # validating query for better infrence
+    # validate the query to improve inference
     if not validate_query(question):
         humor_responses = [
             "Oops! Looks like I got lost in the financial world. Let's talk about savings instead! 😅",
@@ -54,7 +53,7 @@ def chat_with_bot(question):
             "Not my area of expertise, but I bet your financial future will thank you if you start saving now! 💸",
             "I am afraid I only speak the language of money... but feel free to ask me about it! 💬💰"
         ]
-        return humor_responses[hash(question) % len(humor_responses)]  # randomize humorous responses to make it feel less restirictive felt clnky XD
+        return humor_responses[hash(question) % len(humor_responses)]  # randomize humorous responses to make it feel less restrictive
 
     formatted_prompt = prompt.format(question=question)
 
@@ -63,16 +62,21 @@ def chat_with_bot(question):
         model=current_model,
         messages=[{"role": "user", "content": formatted_prompt}]
     )
-    
-    print(response)  # !checking response structure
-    if isinstance(response, dict):
-        raw_content = response.get("message", {}).get("content", "")
-        
-        # removing <think>...</think> and its content
-        clean_content = re.sub(r'<think>.*?</think>', '', raw_content, flags=re.DOTALL)  # using non-greedy regex to remove content inside <think> tags
-        return clean_content.strip() if clean_content else "Error: No content available after cleaning."
 
-    return "Error: Unexpected response format."
+    # Print the raw response for debugging purposes
+    print(response)
+
+    # Extract raw content and clean it up
+    raw_content = response.get("message", {}).get("content", "")
+    
+    # Clean up the response to remove <think> tags and other unnecessary elements
+    clean_content = re.sub(r'<think>.*?</think>', '', raw_content, flags=re.DOTALL)  # remove content inside <think> tags
+    clean_content = re.sub(r'<.*?>', '', clean_content)  # remove any remaining HTML tags
+    
+    return clean_content.strip() if clean_content else "Error: No content available after cleaning."
+
+
+
 
 
 # streamlit title and strat message 

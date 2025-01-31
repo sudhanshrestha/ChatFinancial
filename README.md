@@ -34,10 +34,15 @@ source venv/bin/activate  # For Windows use: venv\Scripts\activate
 ### 3. Install dependencies:
 Run the following command to install the required Python libraries:
 ```bash
-pip install -r requirements.txt
+python requirements.txt
 ```
+### 4. Run the `ollama.bat` file:
+Double-click on the `run_ollama.bat` file to execute the command `ollama run deepseek-r1:8b` in the Command Prompt.
 
-### 4. Run the app:
+**Note:** You can change the model to any other available model. To do this, visit the [Ollama website](https://ollama.com/search) to find the model you want to use. Then, update the model name in the `current_model` variable in the `chat.py` file to match the new model.
+
+
+### 5. Run the app:
 After installing the dependencies, you can start the Streamlit app with:
 ```bash
 streamlit run app.py  # or whatever your main file is named
