@@ -1,3 +1,4 @@
+
 # Financial Advisor Chatbot 💰
 
 This is a **Financial Advisor Chatbot** built with Streamlit, Ollama, and Langchain, designed to help users with financial-related questions, including budgeting, saving, and investing. The chatbot offers personalized, concise, and number-driven advice.
