@@ -17,13 +17,16 @@ required_libraries = [
     'seaborn',          
     'joblib',
     'ollama',
+    'langchain',
+    'chromadb',
+    'langchain-community',
     # 'tensorflow ==2.10.0',
     # 'torch',
     # 'keras',
     # 'transformers',
     # 'accelerate>=0.26.0'   
     'ipywidgets',
-    'google-generativeai'     
+    # 'google-generativeai'     
 ]
 
 for library in required_libraries:
