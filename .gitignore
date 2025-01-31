@@ -2,12 +2,3 @@
 
 # Ignore virtual environment folder
 venv/
-
-# Ignore data folders
-data/
-models/
-chroma_db/
-
-
-# ignore file
-apikey.env
