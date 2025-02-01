@@ -78,3 +78,5 @@ The app is hosted on **Streamlit Community Cloud**. If you wish to host the chat
 Contributions are welcome! Feel free to open issues or submit pull requests to enhance the functionality of this chatbot.
 
 ---
+## License:
+This project is open-source under the MIT License.
